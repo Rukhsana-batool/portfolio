@@ -1,0 +1,429 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rukhsana Batool | Creative Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        /* Light & Dark Theme Variables */
+       
+    </style>
+</head>
+<body>
+
+    <!-- Navbar with Theme Toggle -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rukhsana.</a>
+            <div class="d-flex align-items-center order-lg-3">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="bi bi-sun-fill" id="themeIcon"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-2" id="navbarMain">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn-glow" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3" style="background: rgba(168,85,247,0.2) !important; color: #a855f7 !important;">✨ Welcome to my universe</span>
+                    <h1 class="display-4 fw-bold mb-3" style="background: linear-gradient(135deg, #a855f7, #3b82f6, #c14ef0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hi, I'm Rukhsana Batool</h1>
+                    <h3 class="text-secondary mb-4">Full Stack Developer & Creative Designer</h3>
+                    <p class="lead text-secondary mb-5">Crafting digital experiences that blend creativity and technology. Based in Skardu, Pakistan, I build modern web solutions.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#work" class="btn btn-glow">View My Work</a>
+                        <!-- Download CV - replace with actual PDF -->
+                        <a href="#" download="Rukhsana_Batool_CV.pdf" class="btn btn-outline-glow">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image">
+                        <img src="./image/hijabi girl.jpg" alt="Rukhsana">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="container mt-5 pt-4">
+        <div class="row g-4">
+            <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-card">
+                    <i class="bi bi-stack stat-icon"></i>
+                    <div class="stat-number">15+</div>
+                    <div class="text-secondary">Technologies</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-card">
+                    <i class="bi bi-bar-chart-fill stat-icon"></i>
+                    <div class="stat-number">50+</div>
+                    <div class="text-secondary">Projects</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-card">
+                    <i class="bi bi-people-fill stat-icon"></i>
+                    <div class="stat-number">30+</div>
+                    <div class="text-secondary">Clients</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                <div class="stat-card">
+                    <i class="bi bi-hourglass-split stat-icon"></i>
+                    <div class="stat-number">5+</div>
+                    <div class="text-secondary">Years</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="container mt-5 pt-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5" data-aos="fade-right">
+                <img src="./image/hijabi girl.jpg" alt="About" class="img-fluid rounded-5" style="border: 3px solid rgba(168,85,247,0.3);">
+            </div>
+            <div class="col-lg-7" data-aos="fade-left">
+                <h2 class="section-title text-lg-start text-center">About Me</h2>
+                <p class="fs-5 mt-4 text-secondary">I'm a passionate Full Stack Developer with expertise in building custom WordPress websites, React.js applications, and backend systems using Node.js, MongoDB, and RESTful APIs. I specialize in creating responsive, scalable, and user-friendly digital solutions.</p>
+                <h4 class="fw-bold mb-3" style="background: linear-gradient(45deg, #a855f7, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Providing All Types of Services & Open Discussions</h4>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <span class="badge bg-dark text-white p-3 rounded-4 border border-primary">Programming</span>
+                    <span class="badge bg-dark text-white p-3 rounded-4 border border-primary">Web Design</span>
+                    <span class="badge bg-dark text-white p-3 rounded-4 border border-primary">Consultation</span>
+                    <span class="badge bg-dark text-white p-3 rounded-4 border border-primary">UI/UX</span>
+                </div>
+                <p class="mt-4 text-secondary">We offer a variety of services tailored to your needs with a focus on quality and client satisfaction. Let's connect and bring your ideas to life!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="container mt-5 pt-5">
+        <h2 class="section-title" data-aos="fade-up">My Services</h2>
+        <p class="section-subtitle" data-aos="fade-up">Comprehensive solutions tailored to your needs</p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="100">
+                <div class="glass-card text-center">
+                    <i class="bi bi-phone icon"></i>
+                    <h4 class="fw-bold mb-3">Mobile Development</h4>
+                    <p class="text-secondary">Expert mobile app development for iOS and Android platforms, creating intuitive and feature-rich applications.</p>
+                    <button class="btn btn-outline-glow mt-3">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+                <div class="glass-card text-center">
+                    <i class="bi bi-code icon"></i>
+                    <h4 class="fw-bold mb-3">React & Next.js</h4>
+                    <p class="text-secondary">Modern web development using React and Next.js, ensuring fast, responsive, SEO-friendly websites.</p>
+                    <button class="btn btn-outline-glow mt-3">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="300">
+                <div class="glass-card text-center">
+                    <i class="bi bi-palette icon"></i>
+                    <h4 class="fw-bold mb-3">UI/UX Design</h4>
+                    <p class="text-secondary">Creating beautiful, intuitive interfaces that enhance user experience and drive engagement.</p>
+                    <button class="btn btn-outline-glow mt-3">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section id="work" class="container mt-5 pt-5">
+        <h2 class="section-title" data-aos="fade-up">My Selected Work</h2>
+        <p class="section-subtitle" data-aos="fade-up">Some of my recent projects</p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-card">
+                    <img src="./image/Screenshot_20-2-2026_64758_www.bing.com.jpeg" alt="">
+                    <img src="https://placehold.co/600x400/6f4ef0/ffffff?text=Project+1" alt="Project">
+                    <div class="project-overlay">
+                        <h4 class="fw-bold">E-Commerce Platform</h4>
+                        <p class="small">Full-stack online store with React & Node.js</p>
+                        <a href="#" class="btn btn-sm btn-glow">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-card">
+
+                    <!-- <img src="https://placehold.co/600x400/c14ef0/ffffff?text=Project+2" alt="Project"> -->
+                        <img src="./image/Screenshot_20-2-2026_02431_www.bing.com.jpeg" class="w-100" alt="">
+
+                    <div class="project-overlay">
+                        <h4 class="fw-bold">Tour Website</h4>
+                        <p class="small">Travel booking platform</p>
+                        <a href="#" class="btn btn-sm btn-glow">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="project-card">
+                <img src="./image/Screenshot_20-2-2026_64917_www.bing.com.jpeg" alt="">
+
+                    <!-- <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+3" alt="Project"> -->
+                    <div class="project-overlay">
+                        <h4 class="fw-bold">Blog Platform</h4>
+                        <p class="small">Content management system</p>
+                        <a href="#" class="btn btn-sm btn-glow">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <button class="btn btn-glow px-5 py-3">View All Projects</button>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="container mt-5 pt-5">
+        <h2 class="section-title" data-aos="fade-up">Work Experience</h2>
+        <p class="section-subtitle" data-aos="fade-up">My professional journey</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <span class="timeline-dot"></span>
+                        <div class="glass-card p-4 ms-4">
+                            <h5 class="fw-bold">Freelance Full Stack Developer</h5>
+                            <p class="text-primary mb-2">2022 - Present | Self-Employed, Skardu</p>
+                            <p class="text-secondary">Delivering comprehensive web solutions for clients worldwide. Specialized in creating responsive websites, e-commerce platforms, and custom web applications using modern technologies.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                        <span class="timeline-dot"></span>
+                        <div class="glass-card p-4 ms-4">
+                            <h5 class="fw-bold">Graphic Designer</h5>
+                            <p class="text-primary mb-2">2021 - 2022 | Creative Agency</p>
+                            <p class="text-secondary">Creating stunning visual designs including logos, brand identities, marketing materials, social media graphics, and UI/UX designs for various businesses and startups.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                        <span class="timeline-dot"></span>
+                        <div class="glass-card p-4 ms-4">
+                            <h5 class="fw-bold">Web Development Intern</h5>
+                            <p class="text-primary mb-2">2020 - 2021 | TechStart</p>
+                            <p class="text-secondary">Gained hands-on experience in web development workflows, collaborated on client projects, and developed proficiency in PHP, Laravel, and front-end technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="container mt-5 pt-5">
+        <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
+        <p class="section-subtitle" data-aos="fade-up">What clients and collaborators say</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div id="testimonialCarousel " class="carousel slide px-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <div class="testimonial-card">
+                                <i class="bi bi-quote fs-1 text-primary opacity-50 mb-3"></i>
+                                <p class="fs-5 fst-italic mb-4">"Rukhsana delivered exceptional work on our e-commerce platform and NPIT LMS. His attention to detail and technical expertise exceeded our expectations."</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="https://placehold.co/60x60/6f4ef0/ffffff?text=MA" class="rounded-circle me-3" width="56" height="56">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Muhammad Ali Anjum</h6>
+                                        <small class="text-secondary">Project Leader,Full Stack Devloper</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <i class="bi bi-quote fs-1 text-primary opacity-50 mb-3"></i>
+                                <p class="fs-5 fst-italic mb-4">"Working with Rukhsana on our brand identity was a pleasure. He understood our vision perfectly and delivered stunning designs."</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="https://placehold.co/60x60/c14ef0/ffffff?text=SW" class="rounded-circle me-3" width="56" height="56">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Manahil zahra</h6>
+                                        <small class="text-secondary">Marketing Director, Global Brands Co.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <i class="bi bi-quote fs-1 text-primary opacity-50 mb-3"></i>
+                                <p class="fs-5 fst-italic mb-4">"Professional, reliable, and incredibly talented. Rukhsana's work on our registration system was flawless."</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="https://placehold.co/60x60/3b82f6/ffffff?text=AK" class="rounded-circle me-3" width="56" height="56">
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Zaheer Murad</h6>
+                                        <small class="text-secondary">Full stack decloper</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev " type="button" data-bs-target="#testimonialCarousel " data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container mt-5 pt-5">
+        <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+        <p class="section-subtitle" data-aos="fade-up">Have a project? I'd love to hear from you.</p>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="contact-form">
+                    <!-- Form with mailto action -->
+                    <form action="mailto:Rukhsanabatool@gmail.com" method="POST" enctype="text/plain">
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Name</label>
+                            <input type="text" name="Name" class="form-control" placeholder="i.e Rukhsana batool" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Email</label>
+                            <input type="email" name="Email" class="form-control" placeholder="Rukhsanabatool@gmail.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">Message</label>
+                            <textarea name="Message" class="form-control" rows="4" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-glow w-100 py-3">Send Message <i class="bi bi-send ms-2"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="ps-lg-4">
+                    <h3 class="fw-bold mb-4" style="background: linear-gradient(45deg, #a855f7, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Contact Info</h3>
+                    <!-- Clickable email that opens default mail app -->
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-envelope-fill text-primary fs-2 me-4"></i>
+                        <div>
+                            <h5>Email</h5>
+                            <a href="mailto:Rukhsanabatool@gmail.com" class="text-secondary text-decoration-none">Rukhsanabatool@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-briefcase-fill text-primary fs-2 me-4"></i>
+                        <div>
+                            <h5>Portfolio</h5>
+                            <a href="#" class="text-secondary text-decoration-none">rukhsanabatool.dev</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-geo-alt-fill text-primary fs-2 me-4"></i>
+                        <div>
+                            <h5>Location</h5>
+                            <p class="mb-0 text-secondary">Skardu, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h5 class="mb-3">Follow me</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-primary fs-2"><i class="bi bi-github"></i></a>
+                            <a href="#" class="text-primary fs-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-primary fs-2"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <h3 class="fw-bold" style="background: linear-gradient(135deg, #a855f7, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Rukhsana Batool</h3>
+            <p class="text-secondary mb-0">© 2025 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scroll for navbar links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            body.classList.add('light');
+            themeIcon.classList.remove('bi-sun-fill');
+            themeIcon.classList.add('bi-moon-fill');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light');
+            if (body.classList.contains('light')) {
+                themeIcon.classList.remove('bi-sun-fill');
+                themeIcon.classList.add('bi-moon-fill');
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeIcon.classList.remove('bi-moon-fill');
+                themeIcon.classList.add('bi-sun-fill');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>
